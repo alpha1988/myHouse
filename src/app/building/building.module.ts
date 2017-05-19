@@ -1,11 +1,18 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { BuildingRoutingModule } from "./building-routinng.module";
 import { BuildingComponent } from './building.component';
+import { BuildingDetailComponent } from "./building-detail/building-detail.component";
 
 @NgModule({
   imports: [
-    CommonModule
+    BuildingRoutingModule
   ],
-  declarations: [BuildingComponent]
+  declarations: [
+    BuildingComponent,
+    BuildingDetailComponent
+  ]
 })
-export class BuildingModule { }
+
+export class BuildingModule {
+}

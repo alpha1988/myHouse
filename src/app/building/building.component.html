@@ -1,3 +1,7 @@
-<p>
-  building works!
-</p>
+<p>{{title}}</p>
+<ul>
+  <li *ngFor="let building of buildingsList">
+    <span class="badge">{{building}}</span>
+  </li>
+</ul>
+<router-outlet></router-outlet>
