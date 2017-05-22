@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Joke } from "../share/joke";
 
 @Component({
   selector: 'joke',
@@ -6,11 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./joke.component.scss']
 })
 export class JokeComponent {
-  setup: string;
-  punchline: string;
-
-  constructor() {
-    this.setup = "What did the cheese say when it looked in the mirror?";
-    this.punchline = "Halloumi (Hello Me)";
-  }
+  @Input() joke: Joke;
 }
